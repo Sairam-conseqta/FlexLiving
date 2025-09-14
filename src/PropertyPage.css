@@ -1,0 +1,118 @@
+.property-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+.property-back-btn {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6eef0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.property-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.property-img {
+  width: 160px;
+  height: 120px;
+  background: #eef6f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.property-subtitle {
+  color: #54736f;
+  margin-top: 6px;
+}
+
+.property-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.property-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #e9f0ef;
+}
+
+.property-overview p {
+  color: #456b66;
+}
+
+.property-reviews {
+  margin-top: 16px;
+}
+
+.property-review-empty {
+  padding: 12px;
+  border: 1px dashed #d8eae6;
+  border-radius: 8px;
+}
+
+.property-review {
+  border-radius: 8px;
+  padding: 14px;
+  border: 1px solid #eef6f4;
+  margin-top: 12px;
+  background: #fff;
+}
+
+.property-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property-review-guest {
+  font-weight: 700;
+}
+
+.property-review-date {
+  color: #6b8b88;
+  font-size: 13px;
+}
+
+.property-review-rating {
+  font-weight: 800;
+  background: #eaf6f3;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.property-review-text {
+  margin-top: 10px;
+}
+
+.property-review-categories {
+  margin-top: 8px;
+  color: #6b8b88;
+  font-size: 13px;
+}
+
+.property-summary h4 {
+  margin-top: 0;
+}
+
+.property-summary-rating {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.property-summary-meta {
+  margin-top: 8px;
+  color: #6b8b88;
+}

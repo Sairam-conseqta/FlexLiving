@@ -1,0 +1,102 @@
+/* Dashboard specific styles */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header img {
+  height: 64px;
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.guest-name {
+  font-weight: 700;
+}
+
+.review-date-inline {
+  font-size: 13px;
+  color: #546c6a;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-margin-top {
+  margin-top: 10px;
+}
+
+.review-categories-inline {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #546c6a;
+}
+
+/* Selected Reviews Preview list inside the same card */
+.selected-preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* Slightly compact preview cards inside the preview panel */
+.small-preview {
+  background: #fbfffe;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: none;
+  border: 1px solid rgba(11,107,95,0.04);
+}
+
+/* Footer area inside the Selected Reviews Preview card */
+.selected-preview-footer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(0,0,0,0.04);
+}
+
+/* View Property button style (keeps visual weight but compact) */
+.view-property-btn {
+  background: transparent;
+  border: 1px solid #0f6b63;
+  color: #0f6b63;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(11,107,95,0.06);
+}
+
+.view-property-btn:hover {
+  background: rgba(15,107,99,0.06);
+}
+
+/* Minor spacing for main grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
+}
+

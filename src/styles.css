@@ -1,0 +1,158 @@
+:root{
+  --teal:#0f6b63;
+  --teal-strong:#0b5a50;
+  --muted:#fbfdfc;
+  --card:#ffffff;
+  --muted-border:#e6efee;
+  --accent:#0f6b63;
+  --text:#123a39;
+  --muted-text:#6b8b88;
+  --shadow: rgba(11,107,95,0.12);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background:var(--muted);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* page container - wide with lots of whitespace like screenshot */
+.container{
+  max-width:1200px;
+  margin:48px auto;
+  padding:42px 48px;
+}
+
+/* centered heading area with logo on top */
+.header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:18px;
+}
+.header img{height:64px}
+.header h1{
+  margin:0;
+  font-size:22px;
+  letter-spacing:0.2px;
+  color:var(--text);
+}
+.header .subtitle{color:var(--muted-text); font-size:14px}
+
+/* main card that holds assignment/submission */
+.card{
+  background:var(--card);
+  border-radius:14px;
+  border:1px solid var(--muted-border);
+  padding:28px;
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+/* layout */
+.grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:22px}
+
+/* Big section headers like in screenshot */
+.section-title{font-weight:600;font-size:18px;margin:8px 0 18px}
+
+/* Submission area styles */
+.upload-panel{
+  border-radius:12px;
+  padding:22px;
+  border:1px solid transparent;
+  background:linear-gradient(180deg,#ffffff,#fbfffd);
+}
+
+/* large dashed upload area */
+.empty-drop{
+  height:160px;
+  border:2px dashed #d8eae6;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  padding:12px;
+  margin-bottom:14px;
+  transition: box-shadow .15s ease, transform .08s ease;
+}
+.empty-drop.dragover{
+  box-shadow: 0 10px 30px rgba(11,107,95,0.06);
+  transform: translateY(-2px);
+}
+
+/* the pill Upload button centered inside dashed box */
+.upload-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:transparent;
+  border:2px solid var(--teal);
+  color:var(--teal);
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:700;
+  box-shadow: 0 6px 12px rgba(11,107,95,0.06);
+  cursor:pointer;
+}
+
+/* small muted helper text under the pill */
+.empty-drop .helper{color:var(--muted-text);font-size:14px;margin-top:6px}
+
+/* notes input similar to screenshot */
+.notes{
+  width:100%;
+  height:64px;
+  border-radius:10px;
+  border:1px solid #e6eef0;
+  padding:12px;
+  resize:none;
+  font-size:14px;
+  color:var(--text);
+}
+
+/* centered submit button like screenshot - round, shadow, airplane icon */
+.submit-row{display:flex;justify-content:center;margin-top:12px}
+.submit-btn{
+  background:var(--teal);
+  color:#fff;
+  padding:14px 28px;
+  border-radius:999px;
+  border:none;
+  font-weight:800;
+  font-size:15px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  box-shadow: 0 10px 22px var(--shadow);
+  cursor:pointer;
+}
+
+/* subtle meta / small text */
+.small{font-size:13px;color:var(--muted-text)}
+
+/* review card tweaks to keep breathing room */
+.review-card{
+  border-radius:10px;
+  padding:14px;
+  border:1px solid #eef6f4;
+  margin-bottom:12px;
+  background:linear-gradient(180deg,#ffffff,#fcfffe);
+}
+
+/* responsive */
+@media(min-width:980px){
+  .grid{grid-template-columns:1fr 360px}
+}
+@media(max-width:600px){
+  .container{padding:20px}
+  .header img{height:56px}
+  .empty-drop{height:140px}
+  .notes{height:56px}
+}
